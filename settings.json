@@ -1,0 +1,174 @@
+{
+	"vim.easymotion": true,
+	"vim.sneak": true,
+	"vim.hlsearch": true,
+	"vim.incsearch": true,
+	"vim.searchHighlightColor": "#c5293e",
+	"vim.useCtrlKeys": false,
+	"vim.useSystemClipboard": true,
+	"vim.statusBarColorControl": true,
+	"vim.visualstar": true,
+	"vim.autoindent": false,
+	"vim.leader": ",",
+	"vim.handleKeys": {
+		"<C-a>": false,
+		"<C-f>": false
+	},
+	"vim.cursorStylePerMode": {
+		"normal": "block",
+		"insert": "line-thin",
+		"replace": "block-outline",
+	},
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": [
+				"<leader>",
+				"m"
+			],
+			"commands": [
+				"bookmarks.toggle"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"b"
+			],
+			"commands": [
+				"bookmarks.list"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				":"
+			],
+			"commands": [
+				"workbench.action.showCommands",
+			]
+		},
+		{
+			"before": [
+				"<C-t>"
+			],
+			"commands": [
+				"workbench.action.navigateBack"
+			]
+		},
+	],
+	"vim.visualModeKeyBindingsNonRecursive": [
+		{
+			"before": [
+				">"
+			],
+			"commands": [
+				"editor.action.indentLines"
+			]
+		},
+		{
+			"before": [
+				"<"
+			],
+			"commands": [
+				"editor.action.outdentLines"
+			]
+		},
+	],
+	"workbench.colorCustomizations": {
+		"statusBar.background": "#007acc",
+		"statusBar.noFolderBackground": "#007acc",
+		"statusBar.debuggingBackground": "#007acc"
+	},
+	"editor.tokenColorCustomizations": {
+		"comments": "#82e0aa" // 注释
+	},
+	"editor.suggestSelection": "first",
+	"editor.insertSpaces": false,
+	"remote.SSH.remotePlatform": {
+		"g60_dev": "linux",
+		"10.215.44.3": "linux",
+		"g129_dev": "linux",
+		"g60_dev_new": "linux",
+		"10.225.82.200": "macOS",
+		"g60_mac_new": "macOS",
+		"coverage-web": "linux"
+	},
+	"workbench.editorAssociations": {
+		"*.ipynb": "jupyter-notebook"
+	},
+	"editor.detectIndentation": false,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"editor.codeActionsOnSave": {},
+	"editor.tabSize": 8,
+	"editor.cursorStyle": "line",
+	"editor.lineNumbers": "on",
+	"editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+	"editor.wordWrap": "off",
+	"editor.formatOnSave": true,
+	"notebook.cellToolbarLocation": {
+		"default": "right",
+		"jupyter-notebook": "left"
+	},
+	"files.insertFinalNewline": true,
+	"files.trimTrailingWhitespace": true,
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.vscode": true,
+		"**/*.exe": true,
+		"**/*.pyc": true,
+		"**/*.obj": true,
+		"**/*.log": true
+	  },
+	"debug.onTaskErrors": "debugAnyway",
+	"search.exclude": {
+		"**/node_modules": true,
+		"**/bower_components": true,
+		"**/*.code-search": true,
+		"**/logic/tags": true,
+		"**/logic/python": true,
+		"**/.git": true,
+		"**/.svn": true,
+		"**/*.obj": true,
+		"**/*.pyc": true   
+	},
+	"search.smartCase": true,
+	"search.showLineNumbers": true,
+	"security.workspace.trust.untrustedFiles": "open",
+	"files.associations": {
+		"@neox::crashhunter::Crash()": "cpp"
+	},
+	"window.openFilesInNewWindow": "on",
+	"TortoiseSVN.tortoiseSVNProcExePath": "C:\\Program Files\\TortoiseSVN\\bin\\TortoiseProc.exe",
+	"python.pythonPath": "C:\\Python27\\python.exe",
+	"python.autoComplete.extraPaths": ["../libs"],
+	"python.autoComplete.addBrackets": true,
+	"python.linting.enabled": true,
+	"python.linting.ignorePatterns": ["**/staticdata/**/*.py", "**/site-packages/**/*.py"],
+	"python.linting.pylintEnabled": true,
+	"python.linting.pylintArgs": [
+		--ignore=W191,W391,E121,E123,E126,E128,E133,E203,E226,E241,E242,E265,E266,E302,E501,E701,E704"
+	],
+	"python.linting.pycodestyleEnabled": false,
+	"python.linting.pycodestyleArgs": [
+		--ignore=W191,W391,E121,E123,E126,E128,E133,E203,E226,E241,E242,E265,E266,E302,E501,E701,E704"
+	],
+	"python.workspaceSymbols.ctagsPath": "ctags",
+	"python.workspaceSymbols.rebuildOnStart": false,
+	"python.workspaceSymbols.exclusionPatterns": [
+		**/site-packages/**",
+		**/work-doc/**"
+	],
+	"python.envFile": "${workspaceFolder}/../.vscode/.env",
+	"python.workspaceSymbols.tagFilePath": "${workspaceFolder}/../.vscode/tags",
+	//  Enables Jedi as IntelliSense engine instead of VS IntelliCode.
+	//"python.jediPath": "C:\Users\qinhe\.vscode\extensions\ms-python.python-2020.6.91350\pythonFiles\lib\python\jedi",
+	"python.jediEnabled": false,
+	"python.languageServer": "Pylance",
+	"python.analysis.typeCheckingMode": "basic",
+	"python.analysis.extraPaths": [
+		${workspaceFolder}/script",
+		${workspaceFolder}/logic"
+	],
+}
