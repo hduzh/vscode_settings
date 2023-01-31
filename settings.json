@@ -75,9 +75,9 @@
 		},
 	],
 	"workbench.colorCustomizations": {
-		"statusBar.background": "#007acc",
-		"statusBar.noFolderBackground": "#007acc",
-		"statusBar.debuggingBackground": "#007acc"
+		"statusBar.background": "#005f5f",
+		"statusBar.noFolderBackground": "#005f5f",
+		"statusBar.debuggingBackground": "#005f5f"
 	},
 	"editor.tokenColorCustomizations": {
 		"comments": "#82e0aa" // 注释
@@ -131,7 +131,7 @@
 		"**/.git": true,
 		"**/.svn": true,
 		"**/*.obj": true,
-		"**/*.pyc": true   
+		"**/*.pyc": true
 	},
 	"search.smartCase": true,
 	"search.showLineNumbers": true,
@@ -148,17 +148,17 @@
 	"python.linting.ignorePatterns": ["**/staticdata/**/*.py", "**/site-packages/**/*.py"],
 	"python.linting.pylintEnabled": true,
 	"python.linting.pylintArgs": [
-		--ignore=W191,W391,E121,E123,E126,E128,E133,E203,E226,E241,E242,E265,E266,E302,E501,E701,E704"
+		"--ignore=W191,W391,E121,E123,E126,E128,E133,E203,E226,E241,E242,E265,E266,E302,E501,E701,E704"
 	],
 	"python.linting.pycodestyleEnabled": false,
 	"python.linting.pycodestyleArgs": [
-		--ignore=W191,W391,E121,E123,E126,E128,E133,E203,E226,E241,E242,E265,E266,E302,E501,E701,E704"
+		"--ignore=W191,W391,E121,E123,E126,E128,E133,E203,E226,E241,E242,E265,E266,E302,E501,E701,E704"
 	],
 	"python.workspaceSymbols.ctagsPath": "ctags",
 	"python.workspaceSymbols.rebuildOnStart": false,
 	"python.workspaceSymbols.exclusionPatterns": [
-		**/site-packages/**",
-		**/work-doc/**"
+		"**/site-packages/**",
+		"**/work-doc/**"
 	],
 	"python.envFile": "${workspaceFolder}/../.vscode/.env",
 	"python.workspaceSymbols.tagFilePath": "${workspaceFolder}/../.vscode/tags",
@@ -168,7 +168,7 @@
 	"python.languageServer": "Pylance",
 	"python.analysis.typeCheckingMode": "basic",
 	"python.analysis.extraPaths": [
-		${workspaceFolder}/script",
-		${workspaceFolder}/logic"
+		"${workspaceFolder}/script",
+		"${workspaceFolder}/logic"
 	],
 }
